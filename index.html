@@ -1,0 +1,96 @@
+<header>
+	<h1>Formulario civil</h1>
+</header>
+
+<div id="form">
+
+<!--Css-->
+<link href="css/style.css" rel="stylesheet">
+<div class="sky" id="sky"></div>
+<div class="sky" id="sky2"></div>
+<!--Css-->
+
+<form id="civil" method="post" style="text-align:justify">
+
+<!--Preguntas-->
+<body>
+    <div class="formgroup" id="nombre-form">
+        <label for="name">1. Nombre*</label>
+        <input type="text" id="nombre" name="nombre" />
+    </div>
+
+    <div class="formgroup" id="apellido-form">
+        <label for="name">Apellido*</label>
+        <input type="text" id="apellido" name="Apellido" />
+    </div>
+
+    <div class="formgroup" id="correo-form">
+        <label for="correo">Correo electronico*</label>
+        <input type="correo" id="correo" name="correo" />
+    </div>
+
+    <div class="formgroup" id="cedula-form">
+        <label for="cedula">Cedula*</label>
+        <input type="cedula" id="cedula" name="cedula" />
+    </div>
+
+    <div class="formgroup" id="direccion-form">
+        <label for="direccion">Dirección*</label>
+        <input type="direccion" id="direccion" name="direccion" />
+    </div>
+
+    <div class="formgroup" id="nom_unidad-form">
+        <label for="nom_unidad">Nombre de la unidad o edificación</label>
+        <input type="nom_unidad" id="nom_unidad" name="nom_unidad" />
+    </div>
+
+    <div class="formgroup" id="departamento-form">
+        <label for="departamento">Departamento*</label>
+        <input type="departamento" id="departamento" name="departamento" />
+    </div>
+
+    <div class="formgroup" id="municipio-form">
+        <label for="municipio">Municipio*</label>
+        <input type="municipio" id="municipio" name="municipio" />
+    </div>
+
+    <div class="formgroup" id="barrio-form">
+        <label for="barrio">Barrio*</label>
+        <input type="barrio" id="barrio" name="barrio" />
+    </div>
+
+    <!--Autorizacion tratamiento de datos-->
+    <div class="formgroup" id="autorizacion-form">
+        <label for="autorizacion">AUTORIZACIÓN PARA EL TRATAMIENTO DE DATOS PERSONALES*</label>
+        <label>En cumplimiento de las disposiciones de la Ley 1581 de 2012 y del Decreto reglamentario 1377 de 2013 que desarrollan el derecho de habeas data, solicitamos su autorización para que CNCI en calidad de Responsable del Tratamiento pueda recopilar, almacenar, archivar, copiar, analizar, usar y consultar los datos.   Teniendo en cuenta lo anterior, autorizo de manera voluntaria</label>
+        <br><br>
+        <input type="checkbox" name="op_si" value="si"> Si. <br><br>
+        <input type="checkbox" name="op_no" value="no"> No. <br><br>
+    </div>
+    <!--Nivel de formacion-->
+    <div class="formgroup" id="formacion-form">
+        <label for="formacion">Nivel de formación academica*</label><br>
+        <input type="radio" name="op_si" value="si">A. Primaria.<br>
+        <input type="radio" name="op_si" value="si">B. Bachillerato.<br>
+        <input type="radio" name="op_si" value="si">C. Técnico.<br>
+        <input type="radio" name="op_si" value="si">D. Técnico<br>
+        <input type="radio" name="op_si" value="si">E. Universitario.<br>
+        <input type="radio" name="op_si" value="si">F. Ninguna<br>
+    </div>
+    <!--Año de construccion-->
+    <div class="formgroup" id="constructora-form">
+        <label for="costructora">¿La vivienda fue construida por alguna entidad o empresa constructora?*</label><br>
+        <input type="checkbox" name="op1_si" value="si"> Si. <br>
+        <input type="checkbox" name="op1_no" value="no"> No. <br>
+    </div>
+
+    <div class="formgroup" id="nom_constructora-form">
+        <label for="nom_constructora">Nombre de la constructura</label>
+        <textarea id="nom_constructora" name="nom_constructora"></textarea>
+    </div>
+</body>
+
+<input type="submit" value="Enviar" />
+</form>
+<script src="js/js.js"></script>
+</div>
