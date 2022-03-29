@@ -13,6 +13,17 @@
 <form id="civil" method="post" style="text-align:justify">
 
 <!--Preguntas-->
+
+<!--Pestaña-->
+<!--Autorizacion tratamiento de datos-->
+<div class="formgroup" id="autorizacion-form">
+    <label for="autorizacion">1.10 AUTORIZACIÓN PARA EL TRATAMIENTO DE DATOS PERSONALES*</label>
+    <label>En cumplimiento de las disposiciones de la Ley 1581 de 2012 y del Decreto reglamentario 1377 de 2013 que desarrollan el derecho de habeas data, solicitamos su autorización para que CNCI en calidad de Responsable del Tratamiento pueda recopilar, almacenar, archivar, copiar, analizar, usar y consultar los datos.   Teniendo en cuenta lo anterior, autorizo de manera voluntaria</label>
+    <br><br>
+    <input type="checkbox" name="op_si" value="si"> Si. <br><br>
+    <input type="checkbox" name="op_no" value="no"> No. <br><br>
+</div>
+<!--Pestaña-->
 <body>
     <h2>1. Información del encuestado.</h2>
     <div class="formgroup" id="nombre-form">
@@ -60,14 +71,6 @@
         <input type="barrio" id="barrio" name="barrio" />
     </div>
 
-    <!--Autorizacion tratamiento de datos-->
-    <div class="formgroup" id="autorizacion-form">
-        <label for="autorizacion">1.10 AUTORIZACIÓN PARA EL TRATAMIENTO DE DATOS PERSONALES*</label>
-        <label>En cumplimiento de las disposiciones de la Ley 1581 de 2012 y del Decreto reglamentario 1377 de 2013 que desarrollan el derecho de habeas data, solicitamos su autorización para que CNCI en calidad de Responsable del Tratamiento pueda recopilar, almacenar, archivar, copiar, analizar, usar y consultar los datos.   Teniendo en cuenta lo anterior, autorizo de manera voluntaria</label>
-        <br><br>
-        <input type="checkbox" name="op_si" value="si"> Si. <br><br>
-        <input type="checkbox" name="op_no" value="no"> No. <br><br>
-    </div>
     <!--Nivel de formacion-->
     <div class="formgroup" id="formacion-form">
         <label for="formacion">1.11 Nivel de formación academica*</label><br>
@@ -100,6 +103,8 @@
         <label for="nom_constructora">1.13.2 Nombre de la constructura</label>
         <textarea id="nom_constructora" name="nom_constructora"></textarea>
     </div>
+
+    <!--Pestaña-->
     <h2>Al exterior de la vivienda.</h2>
     <h3>Las siguientes preguntas se deberán realizar por fuera de la vivienda para poder observar las características de las preguntas.</h3>
     <h4>2. Concepto previo.</h4>
@@ -132,7 +137,7 @@
         <input type="radio" name="ele_2" value="si">B. Montalla.<br>
     </div>
     
-    <br><h3>4. Uso de la vivienda.</h3>
+    <br><h4>4. Uso de la vivienda.</h4>
     <div class="formgroup" id="uso_act-form">
         <label for="uso_act">4.1 El uso actual predominante de la vivienda es:*</label><br>
         <input type="radio" name="usoact_1" value="si">A. Residencial.<br>
@@ -179,7 +184,7 @@
         <input type="radio" name="usoanct1_9" value="si">I. Hotelero.<br>
         <input type="radio" name="usoanct1_10" value="si">J. No aplica.<br>
     </div>
-    <br><h3>5. Número de pisos.</h3>
+    <br><h4>5. Número de pisos.</h4>
     <div class="formgroup" id="numeropis-form">
         <label for="numeropis">5.1 El total de pisos de la vivienda*</label><br>
         <input type="radio" name="num_1" value="1"> 1. <br>
@@ -210,12 +215,50 @@
         <input type="radio" name="sota_6" value="6">F. Mayores a 5. <br>
     </div>
 
-    <h3>6. Posibilidad de golpeteo con edificaciones.</h3>
+    <h4>6. Posibilidad de golpeteo con edificaciones.</h4>
     <div class="formgroup" id="muro-form">
         <label for="muro">6.1 ¿Comparte muro con los vecinos de al lado?*</label><br>
         <input type="checkbox" name="muro_si" value="si"> Si. <br>
         <input type="checkbox" name="muro_no" value="no"> No. <br>
     </div>
+
+    <h4>7. Elementos espaciales.</h4>
+    <div class="formgroup" id="elemen_espa-form">
+        <label for="elemen_espa">7.1 Hay presencia de equipos (grandes) dentro de la edificación.*</label><br>
+        <input type="checkbox" name="elemen_espa1">A. Piscinas.<br>
+        <input type="checkbox" name="elemen_espa2">B. Canchas.<br>
+        <input type="checkbox" name="elemen_espa3">C. Máquinas de gimnasio.<br>
+        <input type="checkbox" name="elemen_espa4">D. Tanques de agua.<br>
+        <input type="checkbox" name="elemen_espa5">E. Maquinaria industrial.<br>
+        <input type="checkbox" name="uelemen_espa6">F. Almacenamientos.<br>
+        <input type="checkbox" name="elemen_espa7">G. Ninguna de los anteriores<br><br>
+        <input type="text" name="elemen_espa8" id="oelemen_espa8">H. Otro.<br><br>
+    </div>    
+
+    <!--Pestaña-->
+    <h2>Interior de la vivienda</h2>
+    <h3>Las siguientes preguntas se deberán realizar en el interior de la vivienda para poder observar las características de las preguntas.</h3>
+
+    <div class="formgroup" id="altura_p-form">
+        <label for="altura_p">8. Altura entre pisos (el piso de la vivienda al techo):*</label><br>
+        <input type="checkbox" name="altura_p1">A. 2 metros.<br>
+        <input type="checkbox" name="altura_p2">B. 2.1 a 2.5 metros.<br>
+        <input type="checkbox" name="altura_p3">C. 2.6 a 3 metros.<br>
+        <input type="checkbox" name="altura_p4">D. 3.1 metros o mayores.<br>
+    </div>    
+    <h4>9. Descripción de la vivienda.</h4>
+    <div class="formgroup" id="altura_p-form">
+        <label for="altura_p">9.1. Material de construcción.*</label><br>
+        <input type="checkbox" name="mate_c1">A. Mampostería. (construcción compuesta por ladrillos u otro material).<br>
+        <input type="checkbox" name="amate_c2">B. Concreto reforzado. (Construcción compuesta por concreto y acero).<br>
+        <input type="checkbox" name="mate_c3">C. Prefabricado (construcción por secciones o módulos que fueron diseñadas con antelación por fuera de la construcción).<br>
+        <input type="checkbox" name="amate_c4">D. Acero.<br>
+        <input type="checkbox" name="amate_c5">E. Madera.<br>
+        <input type="checkbox" name="amate_c6">F. Adobe.<br>
+        <input type="checkbox" name="amate_c7">G. Tapia.<br>
+        <input type="checkbox" name="amate_c8">H. AGuadua.<br>
+        <input type="text" name="amate_c9" id="oelemen_espa8">I. Otro.<br><br>
+    </div> 
 </body>
 
 <input type="submit" value="Enviar" />

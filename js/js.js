@@ -9,23 +9,23 @@ $('document').ready(function(){
 		$('#' + background + '-form').removeClass('formgroup-active');
 	});
 
-function errorfield(field){
-	$(field).addClass('formgroup-error');
-	console.log(field);	
-}
+	function errorfield(field){
+		$(field).addClass('formgroup-error');
+		console.log(field);	
+	}
 
-$("#waterform").submit(function() {
-	var stopsubmit = false;
+	$("#waterform").submit(function() {
+		var stopsubmit = false;
 
-if($('#name').val() == "") {
-	errorfield('#name-form');
-	stopsubmit=true;
-}
-if($('#email').val() == "") {
-	errorfield('#email-form');
-	stopsubmit=true;
-}
-  if(stopsubmit) return false;
-});
-		
+	if($('#name').val() == "") {
+		errorfield('#name-form');
+		stopsubmit=true;
+	}
+	if($('#email').val() == "") {
+		errorfield('#email-form');
+		stopsubmit=true;
+	}
+	if(stopsubmit) return false;
+	});
+
 });
