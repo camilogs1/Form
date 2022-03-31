@@ -67,7 +67,7 @@ header{
 }
 
 #form{
-	height: 1000%;	
+	height: 2000%;	
 	background-color: #007b99;
 	overflow: hidden;
 	position: relative;
@@ -156,4 +156,23 @@ label{
 .formgroup-error{
 	background-image: url('http://www.geertjanhendriks.nl/codepen/form/octo-error.png');
 	color: red;
+}
+
+/*
+.menu {
+	display: flex ;
+}
+
+.menu p {
+	margin-right: 2rem;
+	cursor: pointer;
+}
+*/
+
+[data-content] {
+	display: none;
+}
+
+.active[data-content]{
+	display: block;
 }
