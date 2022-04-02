@@ -1,0 +1,109 @@
+<html lang="es">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<header>
+    <h1>Formulario civil</h1>
+</header>
+
+<div id="form">
+
+    <!--Css-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+-->
+    <div class="sky" id="sky"></div>
+    <div class="sky" id="sky2"></div>
+    <!--Css-->
+
+    <form id="civil" method="post" style="text-align:justify">
+        <!--Inicio Preguntas-->
+
+        <body>
+
+            <div class="menu" id="pes_1">
+                <h2>1. Información del encuestado.</h2>
+                <div class="data-content" id="pre_1.1-form">
+                    <label for="pre_1.1">1.1 Nombre y apellido*</label>
+                    <input type="text" name="pre_1.1_t" />
+                </div>
+
+                <div class="data-content" id="pre_1.2-form">
+                    <label for="pre_1.2">1.2 Celular*</label>
+                    <input type="text" name="pre_1.2_t" />
+                </div>
+
+                <div class="data-content" id="pre_1.3-form">
+                    <label for="pre_1.3">1.3 Correo electronico*</label>
+                    <input type="text" name="pre_1.3_t" />
+                </div>
+
+                <div class="data-content" id="pre_1.4-form">
+                    <label for="pre_1.4">1.4 Cedula*</label>
+                    <input type="text" name="pre_1.4_t" />
+                </div>
+
+                <div class="data-content" id="pre_1.5-form">
+                    <label for="pre_1.5">1.5 Dirección*</label>
+                    <input type="text" name="pre_1.5_t" />
+                </div>
+
+                <div class="data-content" id="pre_1.6-form">
+                    <label for="pre_1.6">1.6 Nombre de la unidad o edificación</label>
+                    <input type="text" name="npre_1.6_t" />
+                </div>
+
+                <div class="data-content" id="pre_1.7-form">
+                    <label for="pre_1.7">1.7 Departamento*</label>
+                    <input type="text" name="pre_1.7_t" />
+                </div>
+
+                <div class="data-content" id="pre_1.8-form">
+                    <label for="pre_1.8">1.8 Municipio*</label>
+                    <input type="text" name="pre_1.8_t" />
+                </div>
+
+                <div class="data-content" id="pre_1.9-form">
+                    <label for="pre_1.9">1.9 Barrio*</label>
+                    <input type="text" name="pre_1.9_t" />
+                </div>
+
+                <!--Nivel de formacion-->
+                <div class="data-content" id="pre_1.11-form">
+                    <label for="pre_1.11">1.11 Nivel de formación academica*</label><br>
+                    <input type="checkbox" name="pre_1.11_a" value="si">A. Primaria.<br>
+                    <input type="checkbox" name="pre_1.11_b" value="si">B. Bachillerato.<br>
+                    <input type="checkbox" name="pre_1.11_c" value="si">C. Técnico.<br>
+                    <input type="checkbox" name="pre_1.11_d" value="si">D. Técnico<br>
+                    <input type="checkbox" name="pre_1.11_e" value="si">E. Universitario.<br>
+                    <input type="checkbox" name="pre_1.11_f" value="si">F. Ninguna<br>
+                </div>
+                <!--Año de construcción-->
+                <div class="data-content" id="pre_1.12-form">
+                    <label for="pre_1.12">1.12 Año de construcción*</label><br>
+                    <input type="radio" name="pre_1.12_a" value="si">A. Antes de 1963.<br>
+                    <input type="radio" name="pre_1.12_a" value="si">B. Entre 1963 y 1984.<br>
+                    <input type="radio" name="pre_1.12_a" value="si">C. Entre 1985 y 1997.<br>
+                    <input type="radio" name="pre_1.12_a" value="si">D. Entre 1998 y 2010.<br>
+                    <input type="radio" name="pre_1.12_a" value="si">E. A partir del 2011.<br>
+                </div>
+                <!--Año de construccion-->
+                <br>
+                <h3>1.13 Constructora.</h3>
+                <div class="data-content" id="pre_1.13-form">
+                    <label for="pre_1.13">1.13.1 ¿La vivienda fue construida por alguna entidad o empresa
+                        constructora?*</label><br>
+                    <input type="checkbox" name="pre_1.13_si" value="si"> Si. <br>
+                    <input type="checkbox" name="pre_1.13_no" value="no"> No. <br>
+                </div>
+
+                <div class="data-content" id="nom_constructora-form">
+                    <label for="nom_constructora">1.13.2 Nombre de la constructura</label>
+                    <textarea id="nom_constructora" name="nom_constructora"></textarea>
+                </div>
+                <button class="Next"> <a href="page3.html">Siguiente</a> </button>
+            </div>
+            <br><br>
+        </body>

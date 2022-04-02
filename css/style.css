@@ -66,8 +66,7 @@ header{
 	background: url('https://cdn.pixabay.com/photo/2020/09/22/21/09/architecture-5594350_960_720.png') repeat-x bottom;
 }
 
-#form{
-	height: 2000%;	
+#form{	
 	background-color: #007b99;
 	overflow: hidden;
 	position: relative;
@@ -85,7 +84,7 @@ form{
 label, input, textarea{
 	display: block;	
 }
-input, textarea{
+input, textarea, .Next{
 	width: 500px;	
 	border: none;
 	border-radius: 20px;
@@ -128,8 +127,22 @@ input[type="submit"]{
 }
 input[type="submit"]:hover{
 	background-color: #e58f0e;
-	
 }
+	
+.Next{
+	background-color: #F90;
+	color: white;
+	height: 50px;
+	cursor: pointer;
+	margin-top: 30px;
+	font-size: 1.29em;
+	font-family: 'Sniglet', cursive;
+	-webkit-transition: background-color 0.5s;
+	-moz-transition: background-color 0.5s;
+	-o-transition: background-color 0.5s;
+	transition: background-color 0.5s;
+}
+
 label{
 	font-size: 1.5em;
 	margin-top: 20px;
