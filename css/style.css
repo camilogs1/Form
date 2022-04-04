@@ -1,6 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Sniglet|Raleway:900);
 
-
 body, html{
 	height: 100%;
 	padding: 0;
@@ -19,48 +18,6 @@ h1{
 
 }
 
-/* Animation webkit */
-@-webkit-keyframes myfirst
-{
-	0% {margin-left: -235px}
-	90% {margin-left: 100%;}
-	100% {margin-left: 100%;}
-}
-
-/* Animation */
-@keyframes myfirst
-{
-	0% {margin-left: -235px}
-	70% {margin-left: 100%;}
-	100% {margin-left: 100%;}
-}
-
-.sky{
-	/*background-image: url('http://www.geertjanhendriks.nl/codepen/form/sky.png');*/
-	/*background-image: url('http://2.bp.blogspot.com/-DGgCwATydQQ/VBqengam-II/AAAAAAAALHg/r729V8NDlVA/s1600/tumblr_mrsty0QeA21r8ptfdo1_500.gif');*/
-	width: 435px;
-	height: 8000px;
-	margin-left: -1235px;
-	position: absolute;	
-	animation: myfirst 64s;
-	-webkit-animation: myfirst 64s;
-	animation-iteration-count: infinite;
-	-webkit-animation-iteration-count: infinite;
-	animation-timing-function: linear;
-	-webkit-animation-timing-function: linear;
-}
-
-#sky{
-	top: 1px;
-}
-
-#sky2{
-	top: 260px;
-	animation-delay: 12s;
-	-webkit-animation-delay: 12s;
-}
-
-
 header{
 	height: 160px;
 	background: url('https://cdn.pixabay.com/photo/2020/09/22/21/09/architecture-5594350_960_720.png') repeat-x bottom;
@@ -72,14 +29,13 @@ header{
 	position: relative;
 	
 }
+
 form{
 	margin: 0 auto;
 	width: 500px;
 	padding-top: 40px;
 	color: white;
 	position: relative;
-	
-	
 }
 label, input, textarea{
 	display: block;	
@@ -159,28 +115,6 @@ label{
 	width: 566px;
 	padding-top: 2px;
 }
-
-.formgroup{
-	background-image: url('http://www.geertjanhendriks.nl/codepen/form/pixel.gif');	
-}
-.formgroup-active{
-	background-image: url('http://www.geertjanhendriks.nl/codepen/form/octo.png');
-}
-.formgroup-error{
-	background-image: url('http://www.geertjanhendriks.nl/codepen/form/octo-error.png');
-	color: red;
-}
-
-/*
-.menu {
-	display: flex ;
-}
-
-.menu p {
-	margin-right: 2rem;
-	cursor: pointer;
-}
-*/
 
 [data-content] {
 	display: none;
