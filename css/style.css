@@ -37,16 +37,19 @@ h4 {
 body {
 	height: 100%;
 	background: url('https://cdn.pixabay.com/photo/2020/09/22/21/09/architecture-5594350_960_720.png') repeat-x bottom;
+	background-attachment: fixed;
 }
 
 form {
 	margin: 0 auto;
+	background-color: white;
 	width: 800px;
 	padding-top: 40px;
 	color: black;
 	position: relative;
 	overflow: hidden;
 	font-family: 'Sniglet', cursive;
+	opacity: 40;
 }
 
 label {
@@ -66,6 +69,9 @@ label {
 
 }
 
+.menu{
+	text-align: center;
+}
 /*Boton siguiente*/
 .Next {
 	background-color: #F90;
