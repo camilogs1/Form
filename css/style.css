@@ -1,10 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Sniglet|Raleway:900);
 
-body, html{
-	height: 100%;
-	padding: 0;
-	margin: 0;
-	font-family: 'Sniglet', cursive;
+
+html{
+	-webkit-font-smooothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-align: center;
+	font-family: 'Sniglet';
 }
 h1{
 	font-weight: normal;
@@ -18,32 +19,37 @@ h1{
 
 }
 
-header{
-	height: 160px;
+body{
+	height: 100%;
 	background: url('https://cdn.pixabay.com/photo/2020/09/22/21/09/architecture-5594350_960_720.png') repeat-x bottom;
+
 }
 
-#form{	
-	background-color: #007b99;
+#form{
 	overflow: hidden;
 	position: relative;
-	
 }
 
 form{
 	margin: 0 auto;
-	width: 500px;
+	width: 800px;
 	padding-top: 40px;
-	color: white;
+	color: black;
 	position: relative;
 }
 label, input, textarea{
 	display: block;	
 }
-input, textarea, .Next{
-	width: 500px;	
+
+input {
+	width: 175px;
+}
+
+textarea, .Next{
+	width: 500px;
 	border: none;
 	border-radius: 20px;
+	text-decoration: none;
 	outline: none;
 	padding: 10px;
 	font-family: 'Sniglet', cursive;
@@ -53,16 +59,12 @@ input, textarea, .Next{
 	-webkit-transition: border 0.5s;
 	-moz-transition: border 0.5s;
 	-o-transition: border 0.5s;
-	border: solid 3px #98d4f3;	
+	border: solid 3px #000000;	
 	-webkit-box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	box-sizing:border-box;
 	
 }
-input:focus, textarea:focus{
-	border: solid 3px #77bde0;	
-}
-
 textarea{
 	height: 100px;	
 	resize: none; 
@@ -74,6 +76,7 @@ input[type="submit"]{
 	height: 50px;
 	cursor: pointer;
 	margin-top: 30px;
+	text-decoration: none;
 	font-size: 1.29em;
 	font-family: 'Sniglet', cursive;
 	-webkit-transition: background-color 0.5s;
@@ -84,14 +87,15 @@ input[type="submit"]{
 input[type="submit"]:hover{
 	background-color: #e58f0e;
 }
-	
+
 .Next{
 	background-color: #F90;
 	color: white;
 	height: 50px;
 	cursor: pointer;
+	text-decoration: none;
 	margin-top: 30px;
-	font-size: 1.29em;
+	font-size: 1.3em;
 	font-family: 'Sniglet', cursive;
 	-webkit-transition: background-color 0.5s;
 	-moz-transition: background-color 0.5s;
@@ -100,7 +104,7 @@ input[type="submit"]:hover{
 }
 
 label{
-	font-size: 1.5em;
+	font-size: 1.2em;
 	margin-top: 20px;
 	padding-left: 20px;
 }
