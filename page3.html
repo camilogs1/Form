@@ -20,7 +20,7 @@
     <form id="civil" method="post" style="text-align:justify">
         <!--Inicio Preguntas-->
 
-        <body>
+        <body onload="visu_pag3()">
 
             <div class="menu" id="pes_2">
                 <h2>Al exterior de la vivienda.</h2>
@@ -76,7 +76,6 @@
                     <label for="pre_2.2">Imagen del frente de la vivienda*</label>
                     <input type="file" name="pre_2.2_img" />
                 </div>
-                <!--Ubicación -> adjuntar imagen 22 y 23 en a y b-->
                 <br>
 
                 <h4>Localización.</h4>
@@ -87,15 +86,24 @@
                         <label class="form-radio-label" for="pre_3.1_a">
                             A. Ladera.
                         </label><br>
+                        <div class="popup-button">
+                            Imagen ejemplo.
+                            <div class="popup"><img src="img/22.jpg" alt=""> </div>
+                        </div>
                     </div>
                     <div class="form-radio">
                         <input class="form-radio-input" type="radio" value="" id="pre_3.1_b" name="pre_3.1">
                         <label class="form-radio-label" for="pre_3.1_b">
                             B. Valle.
                         </label><br>
+                        <div class="popup-button">
+                            Imagen ejemplo.
+                            <div class="popup"><img src="img/23.jpg" alt=""> </div>
+                        </div>
                     </div>
                 </div>
-                <!--Elementos -> adjuntar imagen 23 en b-->
+                <!--Ubicación -> adjuntar imagen 22 y 23 en a y b-->
+
                 <div class="data-content" id="pre_3.2-form">
                     <label for="pre_3.2">Elementos cercanos a la vivienda*</label><br>
                     <div class="form-checkbox">
@@ -118,6 +126,7 @@
                     </div>
                 </div>
                 <br>
+                <!--Ubicación -> adjuntar imagen 23 en b-->
 
                 <h4>Uso de la vivienda.</h4>
                 <div class="data-content" id="pre_4.1-form">
@@ -183,7 +192,7 @@
                         </label><br>
                     </div>
                 </div>
-                <div class="data-content" id="pre_4.2-form">
+                <div class="data-content" id="pre_4.2-form" onclick="pre4_2_si()">
                     <label for="pre_4.2">¿la vivienda anteriormente tuvo un eso diferente al actual?*</label><br>
                     <div class="form-radio">
                         <input class="form-radio-input" type="radio" value="" id="pre_4.2_si" name="pre_4.2">
@@ -528,7 +537,10 @@
                         </label><br>
                     </div>
                 </div>
-                <button class="Next"> <a href="page4.html">Siguiente</a> </button>
+                <a href="page4.html" class="Next" id="myBtn"> Siguiente.</a>
             </div>
             <br><br>
         </body>
+    </form>
+    <script src="js/js.js"></script>
+</div>

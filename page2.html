@@ -20,7 +20,7 @@
     <form id="civil" method="post" style="text-align:justify">
         <!--Inicio Preguntas-->
 
-        <body>
+        <body onload="visu_pag2()">
 
             <div class="menu" id="pes_1">
                 <h4>Información del encuestado.</h4>
@@ -181,7 +181,7 @@
                 <!--Año de construccion-->
                 <br>
                 <h3>Constructora.</h3>
-                <div class="data-content" id="pre_1.13-form">
+                <div class="data-content" id="pre_1.13-form" onclick="pre10_si()">
                     <label for="pre_1.13">¿La vivienda fue construida por alguna entidad o empresa
                         constructora?*</label><br>
 
@@ -199,13 +199,15 @@
                     </div>
                 </div>
 
-                <div class="data-content" id="nom_constructora-form">
+                <div class="data-content" id="nom_constructora-form" name="nom_constructora-form">
                     <label for="nom_constructora">Nombre de la constructura</label>
                     <div class="form-check">
                         <input class="form-text-input" type="text" value="" id="pre_1.13.2_t" name="pre_1.13.2">
                     </div>
                 </div>
-                <button class="Next"> <a href="page3.html">Siguiente</a> </button>
+                
+                <br>
+                <a href="page3.html" class="Next" id="myBtn"> Siguiente.</a>
             </div>
             <br><br>
         </body>

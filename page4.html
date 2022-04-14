@@ -20,7 +20,7 @@
     <form id="civil" method="post" style="text-align:justify">
         <!--Inicio Preguntas-->
 
-        <body>
+        <body onload="visu_pag4()">
 
             <div class="menu" id="pes_3">
                 <h2>Interior de la vivienda</h2>
@@ -55,37 +55,30 @@
                     </div>
                 </div>
                 <h4>Descripción de la vivienda.</h4>
-                <div class="data-content" id="pre_9-form">
+                <div class="data-content" id="pre_9-form" onclick="pre9()">
                     <label for="altura_p">9.1. Material de construcción.*</label><br>
                     <div class="form-radio">
                         <input class="form-radio-input" type="radio" value="" id="pre_9_a" name="pre_9">
                         <label class="form-radio-label" for="pre_9_a">
-                            A. Mampostería. (construcción compuesta por ladrillos u otro
-                            material).
-                        </label><br>
-                    </div>
-                    <div class="form-radio">
-                        <input class="form-radio-input" type="radio" value="" id="pre_9_a" name="pre_9">
-                        <label class="form-radio-label" for="pre_9_a">
-                            A. Mampostería. (construcción compuesta por ladrillos u otro
-                            material).
-                            <!--Adjuntar imagen-->
+                            A. Mampostería. 
+                            <!--(construcción compuesta por ladrillos u otro material).-->
+                            <!--Adjuntar imagen 15-->
                         </label><br>
                     </div>
                     <div class="form-radio">
                         <input class="form-radio-input" type="radio" value="" id="pre_9_b" name="pre_9">
                         <label class="form-radio-label" for="pre_9_b">
-                            B. Concreto reforzado. (Construcción compuesta por concreto y
-                            acero).
+                            B. Concreto reforzado.
+                            <!--(Construcción compuesta por concreto y acero).-->
                         </label><br>
                     </div>
                     <div class="form-radio">
                         <input class="form-radio-input" type="radio" value="" id="pre_9_c" name="pre_9">
                         <label class="form-radio-label" for="pre_9_c">
-                            C. Prefabricado (construcción por secciones o módulos que
-                            fueron diseñadas con antelación por fuera de la construcción).
-                            <!--Adjuntar imagen-->
-                        </label><br>
+                            C. Prefabricado.
+                            <!--Adjuntar imagen 12-->
+                        </label>
+                        <!--(construcción por secciones o módulos que fueron diseñadas con antelación por fuera de la construcción)-->
                     </div>
                     <div class="form-radio">
                         <input class="form-radio-input" type="radio" value="" id="pre_9_d" name="pre_9">
@@ -109,7 +102,7 @@
                         <input class="form-radio-input" type="radio" value="" id="pre_9_g" name="pre_9">
                         <label class="form-radio-label" for="pre_9_g">
                             G. Tapia.
-                            <!--Adjuntar imagen-->
+                            <!--Adjuntar imagen 16-->
                         </label><br>
                     </div>
                     <div class="form-radio">
@@ -122,63 +115,64 @@
                         <input class="form-radio-input" type="radio" value="" id="pre_9_i" name="pre_9">
                         <label class="form-radio-label" for="pre_9_i">
                             I. Otro.
-                            <!--Meter text-->
                         </label><br>
+                        <div class="data-content" id="pre9" name="pre9">
+                            <div class="form-check">
+                                <input class="form-text-input" type="text" value="" id="pre9_t" name="pre9_t">
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!--Opciones que salen segun la respuesta-->
                 <!--Opcion A-->
                 <div class="data-content" id="pre_9.2.1-form">
-                    <label for="pre_9.2.1">Tipo de mampostería:</label><br>
+                    <br><br><h4>Tipo de mampostería:</h4><br>
                     <div class="form-radio">
                         <input class="form-radio-input" type="radio" value="" id="pre_9.2.1_a" name="pre_9.2.1">
                         <label class="form-radio-label" for="pre_9.2.1_a">
-                            A. Reforzada. (contiene acero al interior de la
-                            estructura).
-                            <!--Adjuntar imagen-->
+                            A. Reforzada. 
+                            <!-- (contiene acero al interior de la estructura).-->
+                            <!--Adjuntar imagen 3-->
                         </label><br>
                     </div>
                     <div class="form-radio">
                         <input class="form-radio-input" type="radio" value="" id="pre_9.2.1_b" name="pre_9.2.1">
                         <label class="form-radio-label" for="pre_9.2.1_b">
-                            B. No Reforzada (No contiene hierro al interior de la
-                            estructura, solo sería el adobe).
+                            B. No Reforzada 
+                            <!--(No contiene hierro al interior de la estructura, solo sería el adobe).-->
                         </label><br>
                     </div>
                     <div class="form-radio">
                         <input class="form-radio-input" type="radio" value="" id="pre_9.2.1_c" name="pre_9.2.1">
                         <label class="form-radio-label" for="pre_9.2.1_c">
-                            C. Confinada. (Muro el cual está encerrado alrededor por
-                            vigas y columnas).
-                            <!--Adjuntar imagen-->
+                            C. Confinada. 
+                            <!--(Muro el cual está encerrado alrededor por vigas y columnas).-->
+                            <!--Adjuntar imagen 2-->
                         </label><br>
                     </div>
                 </div>
                 <!--Opcion B-->
                 <div class="data-content" id="pre_9.2.2-form">
-                    <label for="pre_9.2.2">Concreto reforzado:</label><br>
+                    <br><br><h4>Concreto reforzado:</h4><br>
                     <div class="form-radio">
                         <input class="form-radio-input" type="radio" value="" id="pre_9.2.2_a" name="pre_9.2.2">
                         <label class="form-radio-label" for="pre_9.2.2_a">
                             A. Muro estructural.
-                            <!-- (muro el cual no se puede quitar ni
-                                modificar, ya que son muros que soportan la carga de la vivienda.)-->
-                            <!--Adjuntar imagen-->
+                            <!-- (muro el cual no se puede quitar ni modificar, ya que son muros que soportan la carga de la vivienda.)-->
                         </label><br>
                     </div>
                     <div class="form-radio">
                         <input class="form-radio-input" type="radio" value="" id="pre_9.2.2_b" name="pre_9.2.2">
                         <label class="form-radio-label" for="pre_9.2.2_b">
                             B. Pórtico.
-                            <!--Adjuntar imagen-->
+                            <!--Adjuntar imagen 7-->
                         </label><br>
                     </div>
                     <div class="form-radio">
                         <input class="form-radio-input" type="radio" value="" id="pre_9.2.2_c" name="pre_9.2.2">
                         <label class="form-radio-label" for="pre_9.2.2_c">
                             C. Sistema dual o combinado.
-                            <!-- (muros estructurales y
-                                pórticos (compuestos por vigas y columnas).-->
+                            <!-- (muros estructurales y pórticos (compuestos por vigas y columnas).-->
                         </label><br>
                     </div>
                     <div class="form-radio">
@@ -187,60 +181,58 @@
                             D. Prefabricado.
                             <!--(construcción por secciones o módulos que
                                 fueron diseñadas con antelación por fuera de la construcción)-->
-                            <!--Adjuntar imagen-->
+                            <!--Adjuntar imagen 12-->
                         </label><br>
                     </div>
                 </div>
                 <!--Opcion C-->
                 <div class="data-content" id="pre_9.2.3-form">
-                    <label for="pre_9.2.3">Prefabricado:</label><br>
+                    <br><br><h4>Prefabricado:</h4><br>
                     <div class="form-radio">
                         <input class="form-radio-input" type="radio" value="" id="pre_9.2.3_a" name="pre_9.2.3">
                         <label class="form-radio-label" for="pre_9.2.3_a">
                             A. Yeso.
-                            <!--Adjuntar imagen-->
+                            <!--Adjuntar imagen 20-->
                         </label><br>
                     </div>
                     <div class="form-radio">
                         <input class="form-radio-input" type="radio" value="" id="pre_9.2.3_b" name="pre_9.2.3">
                         <label class="form-radio-label" for="pre_9.2.3_a">
                             B. Madera.
-                            <!--Adjuntar imagen-->
+                            <!--Adjuntar imagen 18-->
                         </label><br>
                     </div>
                     <div class="form-radio">
                         <input class="form-radio-input" type="radio" value="" id="pre_9.2.3_c" name="pre_9.2.3">
                         <label class="form-radio-label" for="pre_9.2.3_c">
                             C. PVC.
-                            <!--Adjuntar imagen-->
+                            <!--Adjuntar imagen 19-->
                         </label><br>
                     </div>
                     <div class="form-radio">
                         <input class="form-radio-input" type="radio" value="" id="pre_9.2.3_d" name="pre_9.2.3">
                         <label class="form-radio-label" for="pre_9.2.3_d">
                             D. Drywall.
-                            <!--Adjuntar imagen-->
+                            <!--Adjuntar imagen 17-->
                         </label><br>
                     </div>
                     <div class="form-radio">
                         <input class="form-radio-input" type="radio" value="" id="pre_9.2.3_e" name="pre_9.2.3">
                         <label class="form-radio-label" for="pre_9.2.3_e">
                             E. Fibrocemento.
-                            <!--Adjuntar imagen-->
+                            <!--Adjuntar imagen 21-->
                         </label><br>
                     </div>
                     <div class="form-radio">
                         <input class="form-radio-input" type="radio" value="" id="pre_9.2.3_f" name="pre_9.2.3">
                         <label class="form-radio-label" for="pre_9.2.3_f">
                             F. Otro.
-                            <!--Poner text-->
-                            <!--Adjuntar imagen-->
                         </label><br>
                     </div>
                 </div>
                 <!--Fin respuestas Opciones-->
 
-                <h4>Tipo de entrepiso.</h4>
+                <br><br> <h4>Tipo de entrepiso.</h4>
                 <div class="data-content" id="pre_10-form">
                     <label for="pre_10.1">Como se encuentra construido el piso de la vivienda.*</label><br>
                     <div class="form-radio">
@@ -248,28 +240,29 @@
                         <label class="form-radio-label" for="pre_10_a">
                             A. Losa de concreto aligerado.
                             <!--(conformada por concreto armado, estas se evidencian ya que forman una especie de cajón en el techo.)-->
-                            <!--Adjuntar imagen-->
+                            <!--Adjuntar imagen 1-->
                         </label><br>
                     </div>
                     <div class="form-radio">
                         <input class="form-radio-input" type="radio" value="" id="pre_10_b" name="pre_10">
                         <label class="form-radio-label" for="pre_10_b">
-                            B. Losa de concreto maciza. (conformada por concreto y acero)
-                            <!--Adjuntar imagen-->
+                            B. Losa de concreto maciza. 
+                            <!--(conformada por concreto y acero)-->
+                            <!--Adjuntar imagen 6-->
                         </label><br>
                     </div>
                     <div class="form-radio">
                         <input class="form-radio-input" type="radio" value="" id="pre_10_c" name="pre_10">
                         <label class="form-radio-label" for="pre_10_c">
                             C. Vigas de madera.
-                            <!--Adjuntar imagen-->
+                            <!--Adjuntar imagen 4-->
                         </label><br>
                     </div>
                     <div class="form-radio">
                         <input class="form-radio-input" type="radio" value="" id="pre_10_d" name="pre_10">
                         <label class="form-radio-label" for="pre_10_d">
                             D. Vigas de acero.
-                            <!--Adjuntar imagen-->
+                            <!--Adjuntar imagen 5-->
                         </label><br>
                     </div>
                 </div>
@@ -281,67 +274,66 @@
                         <label class="form-radio-label" for="pre_11_a">
                             A. Losa de concreto aligerada.
                             <!--(conformada por concreto armado, estas se evidencian ya que forman una especie de cajón en el techo.)-->
-                            <!--Adjuntar imagen-->
+                            <!--Adjuntar imagen 1-->
                         </label><br>
                     </div>
                     <div class="form-radio">
                         <input class="form-radio-input" type="radio" value="" id="pre_11_b" name="pre_11">
                         <label class="form-radio-label" for="pre_11_b">
                             B. Losa de concreto maciza.
-                            <!--(conformada por concreto y
-                            acero).-->
-                            <!--Adjuntar imagen-->
+                            <!--(conformada por concreto y acero).-->
+                            <!--Adjuntar imagen 6-->
                         </label><br>
                     </div>
                     <div class="form-radio">
                         <input class="form-radio-input" type="radio" value="" id="pre_11_d" name="pre_11">
                         <label class="form-radio-label" for="pre_11_d">
                             C. Zinc.
-                            <!--Adjuntar imagen-->
+                            <!--Adjuntar imagen 8-->
                         </label><br>
                     </div>
                     <div class="form-radio">
                         <input class="form-radio-input" type="radio" value="" id="pre_11_e" name="pre_11">
                         <label class="form-radio-label" for="pre_11_e">
                             D.Termina en plancha.
-                            <!--Adjuntar imagen-->
+                            <!--Adjuntar imagen 14-->
                         </label><br>
                     </div>
                     <div class="form-radio">
                         <input class="form-radio-input" type="radio" value="" id="pre_11_f" name="pre_11">
                         <label class="form-radio-label" for="pre_11_f">
                             E. Placa fácil.
-                            <!--Adjuntar imagen-->
+                            <!--Adjuntar imagen 9-->
                         </label><br>
                     </div>
                     <div class="form-radio">
                         <input class="form-radio-input" type="radio" value="" id="pre_11_g" name="pre_11">
                         <label class="form-radio-label" for="pre_11_g">
                             F. Eternit.
-                            <!--Adjuntar imagen-->
+                            <!--Adjuntar imagen 13-->
                         </label><br>
                     </div>
                     <div class="form-radio">
                         <input class="form-radio-input" type="radio" value="" id="pre_11_h" name="pre_11">
                         <label class="form-radio-label" for="pre_11_h">
                             G. Estructura de madera y tejas de barro.
-                            <!--Adjuntar imagen-->
+                            <!--Adjuntar imagen 11-->
                         </label><br>
                     </div>
                     <div class="form-radio">
                         <input class="form-radio-input" type="radio" value="" id="pre_11_a" name="pre_11">
                         <label class="form-radio-label" for="pre_11_a">
                             H. Metálica.
-                            <!--Adjuntar imagen-->
+                            <!--Adjuntar imagen 10-->
                         </label><br>
                     </div>
                 </div>
 
                 <h4>Estado de daño de la edificación.</h4>
-                <div class="data-content" id="pre_12.1-form">
+                <div class="data-content" id="pre_12.1-form" onclick="pre12()">
                     <label for="pre_12.1">La edificación presenta algún asentamiento (hundimiento)*</label><br>
                     <div class="form-radio">
-                        <input class="form-radio-input" type="radio" value="" id="pre_12.1_si" name="pre_12.1">
+                        <input class="form-radio-input" type="radio" value="" id="pre_12.1_si" name="pre_12.1" onchange="pre12()">
                         <label class="form-radio-label" for="pre_12.1_si">
                             Si.
                         </label><br>
@@ -355,11 +347,10 @@
                 </div>
                 <!--En caso de que sea si-->
                 <div class="data-content" id="pre_12.1_if-form">
-                    <label for="pre_12.1.1">1. Lejania al hundimiento horizontal.*</label><br>
+                    <h5>1. Lejania al hundimiento horizontal.*</h5>
                     <input type="file" name="imagen_12.1.1" />
-
-                    <label for="pre_12.1.2">2. Cercana con algún objeto con el que se pueda dimensionar. (ejemplo: un
-                        lápiz o cuaderno al lado del hundimiento)*</label><br>
+                    <br><br>
+                    <h5>2. Cercana con algún objeto con el que se pueda dimensionar. (ejemplo: un lápiz o cuaderno al lado del hundimiento)*</h5>
                     <input type="file" name="imagen_12.1.2" />
                 </div>
                 <div class="data-content" id="pre_12.2-form">
@@ -378,8 +369,11 @@
                         </label><br>
                     </div>
                 </div>
-                <!-- <input class="Next" value="Enviar" /> -->
-                <button class="Next"> <a href="">Enviar</a> </button>
+                <br>
+                <a href="index.html" class="Next" id="myBtn"> Enviar formulario.</a>
             </div>
             <br><br>
         </body>
+    </form>
+    <script src="js/js.js"></script>
+</div>
