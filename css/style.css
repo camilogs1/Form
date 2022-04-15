@@ -104,13 +104,16 @@ label {
 	display: block;
 }
 
+/* Imagenes desplegables */
+.popup-button{
+	color:  rgb(0, 115, 247);
+	font-size: 1em;
+	text-align:right;
+}
 
-.popup{
-	display: none;
-	width: 150px;
-	height: 100px;
-	background-color: yellow;
-  }
-  .popup-button:hover .popup{
-	display: block;
-  }
+/* Texto desplegables */
+.pop-button{
+	color:  rgb(0, 0, 0);
+	font-size: 1em;
+	text-align: center;
+}

@@ -42,6 +42,19 @@ function pre4_2_si()
 //Pagina 4
 function visu_pag4()
 {
+	//Texto e Imagenes emergentes
+	for(var i = 1; i<28; i++)
+	{
+		var texto = "txt" + i;
+		var imagen = "img" + i;
+		//texto emergente
+		text = document.getElementById(texto)
+		text.style.display = "none";
+		//Imagenes emergente
+		imagen = document.getElementById(imagen)
+		imagen.style.display = "none";
+	}
+
 	//Pregunta 9 - A Mamposteria
 	con2 = document.getElementById("pre_9.2.1-form")
 	con2.style.display = "none";
@@ -111,6 +124,22 @@ function pre12()
 	con5 = document.getElementById("pre_12.1_if-form")
 
 	if(document.getElementById("pre_12.1_si").checked)
+	{
+		con5.style.display = "block";
+	}
+	else 
+	{
+		con5.style.display = "none";
+	}
+}
+
+//texto emergente
+
+function text1_pop()
+{
+	con5 = document.getElementById("txt1")
+
+	if(document.getElementById("btn_pop").click)
 	{
 		con5.style.display = "block";
 	}

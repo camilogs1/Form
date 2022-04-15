@@ -60,25 +60,48 @@
                     <div class="form-radio">
                         <input class="form-radio-input" type="radio" value="" id="pre_9_a" name="pre_9">
                         <label class="form-radio-label" for="pre_9_a">
-                            A. Mampostería. 
+                            A. Mampostería.
                             <!--(construcción compuesta por ladrillos u otro material).-->
                             <!--Adjuntar imagen 15-->
-                        </label><br>
+                        </label>
+                        <input type="button" value="?" id="btn_text1_pop" onclick="text1_pop()">
+                        <input type="button" value="Imagen ejemplo" id="btn_img1_pop" onclick="img1_pop()">
+
+                        <div class="pop-button" id="txt1">
+                            (construcción compuesta por ladrillos u otro material).
+                        </div>
+                        <div class="popup-button" id="img1">
+                            <img src="img/15.jpg" alt="">
+                        </div>
                     </div>
                     <div class="form-radio">
                         <input class="form-radio-input" type="radio" value="" id="pre_9_b" name="pre_9">
                         <label class="form-radio-label" for="pre_9_b">
                             B. Concreto reforzado.
                             <!--(Construcción compuesta por concreto y acero).-->
-                        </label><br>
+                        </label>
+                        <input type="button" value="?" id="btn_text2_pop" onclick="text2_pop()">
+
+                        <div class="pop-button" id="txt2">
+                            (Construcción compuesta por concreto y acero).
+                        </div>
                     </div>
                     <div class="form-radio">
                         <input class="form-radio-input" type="radio" value="" id="pre_9_c" name="pre_9">
                         <label class="form-radio-label" for="pre_9_c">
                             C. Prefabricado.
+                            <!--(construcción por secciones o módulos que fueron diseñadas con antelación por fuera de la construcción)-->
                             <!--Adjuntar imagen 12-->
                         </label>
-                        <!--(construcción por secciones o módulos que fueron diseñadas con antelación por fuera de la construcción)-->
+                        <input type="button" value="?" id="btn_text3_pop" onclick="text3_pop()">
+                        <input type="button" value="Imagen ejemplo" id="btn_img3_pop" onclick="img3_pop()">
+
+                        <div class="pop-button" id="txt3">
+                            (construcción por secciones o módulos que fueron diseñadas con antelación por fuera de la construcción)
+                        </div>
+                        <div class="popup-button" id="img3">
+                            <img src="img/12.jpg" alt="">
+                        </div>
                     </div>
                     <div class="form-radio">
                         <input class="form-radio-input" type="radio" value="" id="pre_9_d" name="pre_9">
@@ -104,6 +127,10 @@
                             G. Tapia.
                             <!--Adjuntar imagen 16-->
                         </label><br>
+                        <input type="button" value="Imagen ejemplo" id="btn_img4_pop" onclick="img4_pop()">
+                        <div class="popup-button" id="img4">
+                            <img src="img/16.jpg" alt=""> 
+                        </div>
                     </div>
                     <div class="form-radio">
                         <input class="form-radio-input" type="radio" value="" id="pre_9_h" name="pre_9">
@@ -133,14 +160,28 @@
                             A. Reforzada. 
                             <!-- (contiene acero al interior de la estructura).-->
                             <!--Adjuntar imagen 3-->
-                        </label><br>
+                        </label>
+                        <input type="button" value="?" id="btn_text5_pop" onclick="text5_pop()">
+                        <input type="button" value="Imagen ejemplo" id="btn_img5_pop" onclick="img5_pop()">
+
+                        <div class="pop-button" id="txt5">
+                            (contiene acero al interior de la estructura).
+                        </div>
+                        <div class="popup-button" id="img5">
+                            <img src="img/3.jpg" alt="">
+                        </div>
                     </div>
                     <div class="form-radio">
                         <input class="form-radio-input" type="radio" value="" id="pre_9.2.1_b" name="pre_9.2.1">
                         <label class="form-radio-label" for="pre_9.2.1_b">
                             B. No Reforzada 
                             <!--(No contiene hierro al interior de la estructura, solo sería el adobe).-->
-                        </label><br>
+                        </label>
+                        <input type="button" value="?" id="btn_text6_pop" onclick="text6_pop()">
+
+                        <div class="pop-button" id="txt6">
+                            (No contiene hierro al interior de la estructura, solo sería el adobe).
+                        </div>
                     </div>
                     <div class="form-radio">
                         <input class="form-radio-input" type="radio" value="" id="pre_9.2.1_c" name="pre_9.2.1">
@@ -148,7 +189,16 @@
                             C. Confinada. 
                             <!--(Muro el cual está encerrado alrededor por vigas y columnas).-->
                             <!--Adjuntar imagen 2-->
-                        </label><br>
+                        </label>
+                        <input type="button" value="?" id="btn_text7_pop" onclick="text7_pop()">
+                        <input type="button" value="Imagen ejemplo" id="btn_img7_pop" onclick="img7_pop()">
+
+                        <div class="pop-button" id="txt7">
+                            (Muro el cual está encerrado alrededor por vigas y columnas).
+                        </div>
+                        <div class="popup-button" id="img7">
+                            <img src="img/2.jpg" alt="">
+                        </div>
                     </div>
                 </div>
                 <!--Opcion B-->
@@ -159,7 +209,12 @@
                         <label class="form-radio-label" for="pre_9.2.2_a">
                             A. Muro estructural.
                             <!-- (muro el cual no se puede quitar ni modificar, ya que son muros que soportan la carga de la vivienda.)-->
-                        </label><br>
+                        </label>
+                        <input type="button" value="?" id="btn_text8_pop" onclick="text8_pop()">
+
+                        <div class="pop-button" id="txt8">
+                            (muro el cual no se puede quitar ni modificar, ya que son muros que soportan la carga de la vivienda.)
+                        </div>
                     </div>
                     <div class="form-radio">
                         <input class="form-radio-input" type="radio" value="" id="pre_9.2.2_b" name="pre_9.2.2">
@@ -167,13 +222,22 @@
                             B. Pórtico.
                             <!--Adjuntar imagen 7-->
                         </label><br>
+                        <input type="button" value="Imagen ejemplo" id="btn_img9_pop" onclick="img9_pop()">
+                        <div class="popup-button" id="img9">
+                            <img src="img/7.jpg" alt="">
+                        </div>
                     </div>
                     <div class="form-radio">
                         <input class="form-radio-input" type="radio" value="" id="pre_9.2.2_c" name="pre_9.2.2">
                         <label class="form-radio-label" for="pre_9.2.2_c">
                             C. Sistema dual o combinado.
                             <!-- (muros estructurales y pórticos (compuestos por vigas y columnas).-->
-                        </label><br>
+                        </label>
+                        <input type="button" value="?" id="btn_text10_pop" onclick="text10_pop()">
+
+                        <div class="pop-button" id="txt10">
+                            (muros estructurales y pórticos (compuestos por vigas y columnas).
+                        </div>
                     </div>
                     <div class="form-radio">
                         <input class="form-radio-input" type="radio" value="" id="pre_9.2.2_d" name="pre_9.2.2">
@@ -182,7 +246,16 @@
                             <!--(construcción por secciones o módulos que
                                 fueron diseñadas con antelación por fuera de la construcción)-->
                             <!--Adjuntar imagen 12-->
-                        </label><br>
+                        </label>
+                        <input type="button" value="?" id="btn_text11_pop" onclick="text11_pop()">
+                        <input type="button" value="Imagen ejemplo" id="btn_img11_pop" onclick="img11_pop()">
+
+                        <div class="pop-button" id="txt11">
+                            (construcción por secciones o módulos que fueron diseñadas con antelación por fuera de la construcción).
+                        </div>
+                        <div class="popup-button" id="img11">
+                            <img src="img/12.jpg" alt="">
+                        </div>
                     </div>
                 </div>
                 <!--Opcion C-->
@@ -194,6 +267,11 @@
                             A. Yeso.
                             <!--Adjuntar imagen 20-->
                         </label><br>
+                        <input type="button" value="Imagen ejemplo" id="btn_img12_pop" onclick="img12_pop()">
+
+                        <div class="popup-button" id="img12">
+                            <img src="img/20.jpg" alt="">
+                        </div>
                     </div>
                     <div class="form-radio">
                         <input class="form-radio-input" type="radio" value="" id="pre_9.2.3_b" name="pre_9.2.3">
@@ -201,6 +279,11 @@
                             B. Madera.
                             <!--Adjuntar imagen 18-->
                         </label><br>
+                        <input type="button" value="Imagen ejemplo" id="btn_img13_pop" onclick="img13_pop()">
+
+                        <div class="popup-button" id="img13">
+                            <img src="img/18.jpg" alt="">
+                        </div>
                     </div>
                     <div class="form-radio">
                         <input class="form-radio-input" type="radio" value="" id="pre_9.2.3_c" name="pre_9.2.3">
@@ -208,6 +291,11 @@
                             C. PVC.
                             <!--Adjuntar imagen 19-->
                         </label><br>
+                        <input type="button" value="Imagen ejemplo" id="btn_img14_pop" onclick="img14_pop()">
+
+                        <div class="popup-button" id="img14">
+                            <img src="img/19.jpg" alt="">
+                        </div>
                     </div>
                     <div class="form-radio">
                         <input class="form-radio-input" type="radio" value="" id="pre_9.2.3_d" name="pre_9.2.3">
@@ -215,6 +303,11 @@
                             D. Drywall.
                             <!--Adjuntar imagen 17-->
                         </label><br>
+                        <input type="button" value="Imagen ejemplo" id="btn_img15_pop" onclick="img15_pop()">
+
+                        <div class="popup-button" id="img15">
+                            <img src="img/17.jpg" alt="">
+                        </div>
                     </div>
                     <div class="form-radio">
                         <input class="form-radio-input" type="radio" value="" id="pre_9.2.3_e" name="pre_9.2.3">
@@ -222,6 +315,11 @@
                             E. Fibrocemento.
                             <!--Adjuntar imagen 21-->
                         </label><br>
+                        <input type="button" value="Imagen ejemplo" id="btn_img16_pop" onclick="img16_pop()">
+
+                        <div class="popup-button" id="img16">
+                            <img src="img/21.jpg" alt="">
+                        </div>
                     </div>
                     <div class="form-radio">
                         <input class="form-radio-input" type="radio" value="" id="pre_9.2.3_f" name="pre_9.2.3">
@@ -241,7 +339,16 @@
                             A. Losa de concreto aligerado.
                             <!--(conformada por concreto armado, estas se evidencian ya que forman una especie de cajón en el techo.)-->
                             <!--Adjuntar imagen 1-->
-                        </label><br>
+                        </label>
+                        <input type="button" value="?" id="btn_text17_pop" onclick="text17_pop()">
+                        <input type="button" value="Imagen ejemplo" id="btn_img17_pop" onclick="img17_pop()">
+
+                        <div class="pop-button" id="txt17">
+                            (conformada por concreto armado, estas se evidencian ya que forman una especie de cajón en el techo).
+                        </div>
+                        <div class="popup-button" id="img17">
+                            <img src="img/1.jpg" alt="">
+                        </div>
                     </div>
                     <div class="form-radio">
                         <input class="form-radio-input" type="radio" value="" id="pre_10_b" name="pre_10">
@@ -249,7 +356,16 @@
                             B. Losa de concreto maciza. 
                             <!--(conformada por concreto y acero)-->
                             <!--Adjuntar imagen 6-->
-                        </label><br>
+                        </label>
+                        <input type="button" value="?" id="btn_text18_pop" onclick="text18_pop()">
+                        <input type="button" value="Imagen ejemplo" id="btn_img18_pop" onclick="img18_pop()">
+
+                        <div class="pop-button" id="txt18">
+                            (conformada por concreto y acero).
+                        </div>
+                        <div class="popup-button" id="img18">
+                            <img src="img/6.jpg" alt="">
+                        </div>
                     </div>
                     <div class="form-radio">
                         <input class="form-radio-input" type="radio" value="" id="pre_10_c" name="pre_10">
@@ -257,6 +373,11 @@
                             C. Vigas de madera.
                             <!--Adjuntar imagen 4-->
                         </label><br>
+                        <input type="button" value="Imagen ejemplo" id="btn_img19_pop" onclick="img19_pop()">
+
+                        <div class="popup-button" id="img19">
+                            <img src="img/4.jpg" alt="">
+                        </div>
                     </div>
                     <div class="form-radio">
                         <input class="form-radio-input" type="radio" value="" id="pre_10_d" name="pre_10">
@@ -264,9 +385,15 @@
                             D. Vigas de acero.
                             <!--Adjuntar imagen 5-->
                         </label><br>
+                        <input type="button" value="Imagen ejemplo" id="btn_img20_pop" onclick="img20_pop()">
+
+                        <div class="popup-button" id="img20">
+                            <img src="img/5.jpg" alt="">
+                        </div>
                     </div>
                 </div>
-
+                
+                <br>
                 <h4>Tipo de techo o cubiera.</h4>
                 <div class="data-content" id="pre_11-form">
                     <div class="form-radio">
@@ -275,7 +402,16 @@
                             A. Losa de concreto aligerada.
                             <!--(conformada por concreto armado, estas se evidencian ya que forman una especie de cajón en el techo.)-->
                             <!--Adjuntar imagen 1-->
-                        </label><br>
+                        </label>
+                        <input type="button" value="?" id="btn_text21_pop" onclick="text21_pop()">
+                        <input type="button" value="Imagen ejemplo" id="btn_img21_pop" onclick="img21_pop()">
+                        
+                        <div class="pop-button" id="txt21">
+                            (conformada por concreto armado, estas se evidencian ya que forman una especie de cajón en el techo).
+                        </div>
+                        <div class="popup-button" id="img21">
+                            <img src="img/1.jpg" alt="">
+                        </div>
                     </div>
                     <div class="form-radio">
                         <input class="form-radio-input" type="radio" value="" id="pre_11_b" name="pre_11">
@@ -283,7 +419,16 @@
                             B. Losa de concreto maciza.
                             <!--(conformada por concreto y acero).-->
                             <!--Adjuntar imagen 6-->
-                        </label><br>
+                        </label>
+                        <input type="button" value="?" id="btn_text22_pop" onclick="text22_pop()">
+                        <input type="button" value="Imagen ejemplo" id="btn_img22_pop" onclick="img22_pop()">
+
+                        <div class="pop-button" id="txt22">
+                            (conformada por concreto y acero).
+                        </div>
+                        <div class="popup-button" id="img22">
+                            <img src="img/6.jpg" alt="">
+                        </div>
                     </div>
                     <div class="form-radio">
                         <input class="form-radio-input" type="radio" value="" id="pre_11_d" name="pre_11">
@@ -291,6 +436,11 @@
                             C. Zinc.
                             <!--Adjuntar imagen 8-->
                         </label><br>
+                        <input type="button" value="Imagen ejemplo" id="btn_img23_pop" onclick="img23_pop()">
+
+                        <div class="popup-button" id="img23">
+                            <img src="img/8.jpg" alt="">
+                        </div>
                     </div>
                     <div class="form-radio">
                         <input class="form-radio-input" type="radio" value="" id="pre_11_e" name="pre_11">
@@ -298,6 +448,11 @@
                             D.Termina en plancha.
                             <!--Adjuntar imagen 14-->
                         </label><br>
+                        <input type="button" value="Imagen ejemplo" id="btn_img24_pop" onclick="img24_pop()">
+
+                        <div class="popup-button" id="img24">
+                            <img src="img/14.jpg" alt="">
+                        </div>
                     </div>
                     <div class="form-radio">
                         <input class="form-radio-input" type="radio" value="" id="pre_11_f" name="pre_11">
@@ -305,6 +460,11 @@
                             E. Placa fácil.
                             <!--Adjuntar imagen 9-->
                         </label><br>
+                        <input type="button" value="Imagen ejemplo" id="btn_img25_pop" onclick="img25_pop()">
+
+                        <div class="popup-button" id="img25">
+                            <img src="img/9.jpg" alt="">
+                        </div>
                     </div>
                     <div class="form-radio">
                         <input class="form-radio-input" type="radio" value="" id="pre_11_g" name="pre_11">
@@ -312,6 +472,11 @@
                             F. Eternit.
                             <!--Adjuntar imagen 13-->
                         </label><br>
+                        <input type="button" value="Imagen ejemplo" id="btn_img26_pop" onclick="img26_pop()">
+
+                        <div class="popup-button" id="img26">
+                            <img src="img/13.jpg" alt="">
+                        </div>
                     </div>
                     <div class="form-radio">
                         <input class="form-radio-input" type="radio" value="" id="pre_11_h" name="pre_11">
@@ -319,6 +484,11 @@
                             G. Estructura de madera y tejas de barro.
                             <!--Adjuntar imagen 11-->
                         </label><br>
+                        <input type="button" value="Imagen ejemplo" id="btn_img27_pop" onclick="img27_pop()">
+
+                        <div class="popup-button" id="img27">
+                            <img src="img/11.jpg" alt="">
+                        </div>
                     </div>
                     <div class="form-radio">
                         <input class="form-radio-input" type="radio" value="" id="pre_11_a" name="pre_11">
@@ -326,9 +496,15 @@
                             H. Metálica.
                             <!--Adjuntar imagen 10-->
                         </label><br>
+                        <input type="button" value="Imagen ejemplo" id="btn_img28_pop" onclick="img28_pop()">
+
+                        <div class="popup-button" id="img28">
+                            <img src="img/10.jpg" alt="">
+                        </div>
                     </div>
                 </div>
-
+                
+                <br>
                 <h4>Estado de daño de la edificación.</h4>
                 <div class="data-content" id="pre_12.1-form" onclick="pre12()">
                     <label for="pre_12.1">La edificación presenta algún asentamiento (hundimiento)*</label><br>
