@@ -24,6 +24,75 @@ function visu_pag3()
 {
 	con1 = document.getElementById("pre_4.2.1-form")
 	con1.style.display = "none";
+
+	//Imagenes emergentes
+	for(var i = 1; i<=3; i++)
+	{
+		var texto = "txt" + i;
+		var imagen = "img" + i;
+		imagen = document.getElementById(imagen);
+		imagen.style.display = "none";
+	}
+}
+
+function img1_pop()
+{
+	con5 = document.getElementById("img1")
+
+	if(document.getElementById("btn_img1_pop").click)
+	{
+		con5.style.display = "block";
+	}
+	else 
+	{
+		con5.style.display = "none";
+	}
+}
+
+function img1_e_pop()
+{
+	con5 = document.getElementById("img1")
+	con5.style.display = "none";
+}
+
+function img3_pop()
+{
+	con5 = document.getElementById("img3")
+
+	if(document.getElementById("btn_img3_pop").click)
+	{
+		con5.style.display = "block";
+	}
+	else 
+	{
+		con5.style.display = "none";
+	}
+}
+
+function img3_e_pop()
+{
+	con5 = document.getElementById("img3")
+	con5.style.display = "none";
+}
+
+function img2_pop()
+{
+	con5 = document.getElementById("img2")
+
+	if(document.getElementById("btn_img2_pop").click)
+	{
+		con5.style.display = "block";
+	}
+	else 
+	{
+		con5.style.display = "none";
+	}
+}
+
+function img2_e_pop()
+{
+	con5 = document.getElementById("img2")
+	con5.style.display = "none";
 }
 
 function pre4_2_si()
@@ -43,16 +112,32 @@ function pre4_2_si()
 function visu_pag4()
 {
 	//Texto e Imagenes emergentes
-	for(var i = 1; i<28; i++)
+	for(var i = 1; i<=28; i++)
 	{
 		var texto = "txt" + i;
 		var imagen = "img" + i;
-		//texto emergente
-		text = document.getElementById(texto)
-		text.style.display = "none";
-		//Imagenes emergente
-		imagen = document.getElementById(imagen)
-		imagen.style.display = "none";
+
+		if(i == 1 || i == 3 ||i == 5 ||i == 7 ||i == 11 ||i == 17 ||i == 18 ||i == 21 ||i == 22)
+		{
+			//texto emergente
+			text = document.getElementById(texto);
+			text.style.display = "none";
+			//Imagenes emergente
+			imagen = document.getElementById(imagen);
+			imagen.style.display = "none";
+		}
+		if (i == 2 ||i == 6 ||i == 8 ||i == 10 )
+		{
+			//texto emergente
+			text = document.getElementById(texto);
+			text.style.display = "none";
+		}
+		if (i == 4 ||i == 9 ||i == 12 ||i == 13 ||i == 14 ||i == 15 ||i == 16 ||i == 19 ||i == 20 ||i == 23 ||i == 24 ||i == 25 ||i == 26 ||   i == 27 ||i == 28)
+		{
+			//Imagenes emergente
+			imagen = document.getElementById(imagen);
+			imagen.style.display = "none";
+		}
 	}
 
 	//Pregunta 9 - A Mamposteria
@@ -132,24 +217,3 @@ function pre12()
 		con5.style.display = "none";
 	}
 }
-
-//texto emergente
-
-function text1_pop()
-{
-	con5 = document.getElementById("txt1")
-
-	if(document.getElementById("btn_pop").click)
-	{
-		con5.style.display = "block";
-	}
-	else 
-	{
-		con5.style.display = "none";
-	}
-}
-
-
-$(function(){
-	$('.popup').load('https://es.theysay.me/ranking/111/');
-  });

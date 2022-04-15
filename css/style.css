@@ -38,7 +38,6 @@ h5 {
 	width: 800px;
 	color: #F90;
 }
-/* Fin Titulos */
 /* Imagen fondo */
 body {
 	height: 100%;
@@ -106,9 +105,9 @@ label {
 
 /* Imagenes desplegables */
 .popup-button{
-	color:  rgb(0, 115, 247);
-	font-size: 1em;
-	text-align:right;
+	float: right;
+	height: 200px;
+ 	width: 200px;
 }
 
 /* Texto desplegables */
