@@ -3,20 +3,21 @@ function visu_pag2()
 {
 	nom_constructora = document.getElementById("nom_constructora-form")
 	nom_constructora.style.display = "none";
+
+	mapa = document.getElementById("mapa")
+	mapa.style.display = "none";
+}
+
+function ver_mapa()
+{
+	mapa = document.getElementById("mapa")
+	mapa.style.display = "block";
 }
 
 function pre10_si()
 {
 	nom_constructora = document.getElementById("nom_constructora-form")
-
-	if(document.getElementById("pre_1.13_si").checked)
-	{
-		nom_constructora.style.display = "block";
-	}
-	else 
-	{
-		nom_constructora.style.display = "none";
-	}
+	nom_constructora.style.display = "block";
 }
 
 //Pagina 3
