@@ -1,10 +1,24 @@
 <html lang="es">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script type="text/javascript">
+        function validarRadio(){
+            if(document.f1.si.checked){
+                location.href ="page2.html";
+            }
+            else
+            {
+                alert("Debe autorizar el uso de los datos para poder continuar");
+            }
+            }
+    </script>
+
 <header>
     <h1>HouseSafe</h1>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
 </header>
 
 <div id="form">
@@ -18,10 +32,10 @@
     -->
     <!--Css-->
 
-    <form id="civil" method="post" style="text-align:justify">
+    <form name="f1" id="civil" method="post" style="text-align:justify">
         <!--Inicio Preguntas-->
         <div id="fondo"></div>
-        <body onload="pre0()">
+        <body >
             <!--Pestaña 0-->
             <!--Autorizacion tratamiento de datos-->
             <div class="menu" id="pes_0">
@@ -32,12 +46,14 @@
                         calidad de Responsable del Tratamiento pueda recopilar, almacenar, archivar, copiar, analizar,
                         usar y consultar los datos. Teniendo en cuenta lo anterior, autorizo de manera
                         voluntaria</label>
-                    <div class="form-radio">
-                        <input class="form-radio-input" type="radio" value="" id="pre_0_si" name="pre_0">
+                
+                    <div class="form-radio" >
+                        <input class="form-radio-input" type="radio" value="" id="si" name="pre_0">
                         <label class="form-radio-label" for="pre_0_si">
                             Si.
                         </label><br>
                     </div>
+                
                     <div class="form-radio">
                         <input class="form-radio-input" type="radio" value="" id="pre_0_no" name="pre_0">
                         <label class="form-radio-label" for="pre_0_no">
@@ -46,7 +62,8 @@
                     </div>
                 </div>
                 <br>
-                <a href="page2.html" class="Next" id="myBtn"> Siguiente.</a>
+                <input class="Next" type="button" name="boton" value="validar" onclick="validarRadio();">
+            
             </div>
             <br><br>
         </body>
