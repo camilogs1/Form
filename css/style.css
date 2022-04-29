@@ -105,9 +105,10 @@ label {
 
 /* Imagenes desplegables */
 .popup-button{
-	float: right;
+	display: block;
+	margin: auto;
 	height: 200px;
- 	width: 200px;
+	width: 200px;
 }
 
 /* Texto desplegables */
@@ -131,4 +132,8 @@ label {
     height:100%;
     width:100%;
     position:absolute;
+}
+.imgmaterial{
+	height: 100%;
+	width: 100%;
 }
