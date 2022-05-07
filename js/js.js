@@ -218,3 +218,110 @@ function pre12()
 		con5.style.display = "none";
 	}
 }
+
+function infopage1(){
+
+	// Informacion Personal
+
+		const name1 = document.getElementById("pre_1.1_t").value;
+		const name2 = document.getElementById("pre_1.1.2_t").value;
+		const ape1 = document.getElementById("pre_1.1.3_t").value;
+		const ape2 = document.getElementById("pre_1.1.4_t").value;
+		const cel = document.getElementById("pre_1.2_t").value;
+		const correo = document.getElementById("pre_1.3_t").value;
+		const cedu = document.getElementById("pre_1.4_t").value;
+		const dire = document.getElementById("pre_1.5_t").value;
+		const nomu = document.getElementById("pre_1.6_t").value;
+		const depar = document.getElementById("pre_1.7_t").value;
+		const muni = document.getElementById("pre_1.8_t").value;
+		const barrio = document.getElementById("pre_1.9_t").value;
+
+
+	// Nivel de estudios
+
+			if(document.getElementById("pre_1.11_a").checked)
+			{
+				const estudios = document.getElementById("pre_1.11_a").value;
+				console.log(estudios)
+			}
+			if(document.getElementById("pre_1.11_b").checked)
+			{
+				const estudiosa = document.getElementById("pre_1.11_b").value;
+				console.log(estudiosa)
+			}
+			if(document.getElementById("pre_1.11_c").checked)
+			{
+				const estudiosb = document.getElementById("pre_1.11_c").value;
+				console.log(estudiosb)
+			}
+			if(document.getElementById("pre_1.11_d").checked)
+			{
+				const estudiosc = document.getElementById("pre_1.11_d").value;
+				console.log(estudiosc)
+			}
+			if(document.getElementById("pre_1.11_e").checked)
+			{
+				const estudiosd = document.getElementById("pre_1.11_e").value;
+				console.log(estudiose)
+			}
+
+	// Año construccion
+
+			if(document.getElementById("pre_1.12_a").checked)
+			{
+				const construccion = document.getElementById("pre_1.12_a").value;
+				console.log(construccion)
+			}
+			if(document.getElementById("pre_1.12_b").checked)
+			{
+				const construccion = document.getElementById("pre_1.12_b").value;
+				console.log(construccion)
+			}
+			if(document.getElementById("pre_1.12_c").checked)
+			{
+				const construccion = document.getElementById("pre_1.12_c").value;
+				console.log(construccion)
+			}
+			if(document.getElementById("pre_1.12_d").checked)
+			{
+				const construccion = document.getElementById("pre_1.12_d").value;
+				console.log(construccion)
+			}
+			if(document.getElementById("pre_1.12_e").checked)
+			{
+				const construccion = document.getElementById("pre_1.12_e").value;
+				console.log(construccion)
+			}
+
+	// Constructora
+			if(document.getElementById("pre_1.13_si").checked)
+			{
+				const constructora = document.getElementById("pre_1.13_si").value;
+				console.log(constructora)
+			}
+			if(document.getElementById("pre_1.12_no").checked)
+			{
+				const constructora = document.getElementById("pre_1.12_no").value;
+				console.log(constructora)
+			}
+			
+			
+			console.log(name1);
+			console.log(name2);
+			console.log(ape1);
+			console.log(ape2);
+			console.log(cel);
+			console.log(correo);
+			console.log(cedu);
+			console.log(dire);
+			console.log(nomu);
+			console.log(depar);
+			console.log(muni);
+			console.log(barrio);
+}
+
+function nextpage2()
+{
+
+	location.href = "page3.html"
+}
