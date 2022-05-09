@@ -331,7 +331,7 @@ function infopage1()
 			console.log(muni);
 			console.log(barrio);
 
-		/*	fetch("https://sheet.best/api/sheets/328d17e6-3170-4f78-af6a-6a40370a88e0", {
+			fetch("https://sheet.best/api/sheets/5006e172-632b-4954-b337-04ab21fd7946", {
 				method: "POST",
 				mode: "cors",
 				headers: {
@@ -357,7 +357,7 @@ function infopage1()
 					NConstructora: nomconstructora,
 					},
 				]),
-				})*/ 
+				})
 }
 
 function nextpage2()
@@ -720,7 +720,7 @@ function nextpage2()
 					console.log(elemento)
 				}
 
-		/*	fetch("https://sheet.best/api/sheets/328d17e6-3170-4f78-af6a-6a40370a88e0", {
+			fetch("https://sheet.best/api/sheets/949986b8-42e3-4d19-bf2e-ea10415c858c", {
 			method: "POST",
 			mode: "cors",
 			headers: {
@@ -741,7 +741,7 @@ function nextpage2()
 				EquiposGrandes: elemento,
 				},
 			]),
-			}) */
+			}) 
 
 	}
 
@@ -749,7 +749,7 @@ function nextpage2()
 	{
 		setTimeout(function(){
 			location.href = "page4.html"
-		}, 1000*5);
+		}, 1000);
 	}
 
 	function infopage3()
@@ -1093,5 +1093,5 @@ function nextpage2()
 	{
 		setTimeout(function(){
 			location.href = "index.html"
-		}, 1000*5);
+		}, 1000);
 	}
