@@ -235,6 +235,9 @@ function infopage1()
 		const depar = document.getElementById("pre_1.7_t").value;
 		const muni = document.getElementById("pre_1.8_t").value;
 		const barrio = document.getElementById("pre_1.9_t").value;
+		const longitud = document.getElementById("longitud").value;
+		const latitud = document.getElementById("latitud").value;
+
 
 
 	// Nivel de estudios
@@ -347,6 +350,8 @@ function infopage1()
 					Correo: correo,
 					Cedula: cedu,
 					Direccion: dire,
+					Longitud: longitud,
+					Latitud: latitud, 
 					NombreU: nomu,
 					Departamento: depar,
 					Municipio: muni,
