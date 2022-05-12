@@ -34,17 +34,42 @@ with st.expander("Ver más..."):
          encuestados es de {mean_df}
      """.format(mean_df = mean_df))
 
-df = pd.DataFrame(
-    np.random.randn(10, 2) / [50, 50] + [6.25, -75.58],
-    columns=['lat', 'lon'])
+st.title("Mapa de encuestados")
+
+df = dataset1[["lat", "lon"]]
+
+new_lat = df["lat"].str.split('.', n=6, expand=True)
+new_lat.columns = ['i1', 'i2', 'i3', 'i4', 'i5', 'i6']
+new_lat_2 = new_lat['i3'].str.split('', n=3, expand=True)
+new_lat_2.columns = ['i1', 'i2', 'i3', 'i4']
+new_lat['i2'] = new_lat['i2'].str.cat(new_lat_2['i2'], sep="")
+df["lat"]= new_lat["i1"].str.cat(new_lat['i2'], sep =".")
+
+new_lon = df["lon"].str.split('.', n=6, expand=True)
+new_lon.columns = ['i1', 'i2', 'i3', 'i4', 'i5', 'i6']
+new_lon_1 = new_lon['i3'].str.split('', n=3, expand=True)
+new_lon_1.columns = ['i1', 'i2', 'i3', 'i4']
+new_lon["i4"]= new_lon_1["i2"].str.cat(new_lon_1['i3'], sep ="")
+new_lon_2 = new_lon['i2'].str.split('', n=2, expand=True)
+new_lon_2.columns = ['i1', 'i2', 'i3']
+new_lon["i3"]= new_lon_2["i3"].str.cat(new_lon['i4'], sep ="")
+new_lon["i1"]= new_lon["i1"].str.cat(new_lon_2['i2'], sep ="")
+df["lon"]= new_lon["i1"].str.cat(new_lon['i3'], sep =".")
+
+
+df = pd.DataFrame(df.astype(float),
+     columns=['lat', 'lon'])
+
+mindpoint = [np.average(df['lat']), np.average(df['lon'])]
+#st.map(df)
 
 st.pydeck_chart(pdk.Deck(
      map_style='mapbox://styles/mapbox/light-v9',
      initial_view_state=pdk.ViewState(
-         latitude=6.25,
-         longitude=-75.58,
-         zoom=11,
-         pitch=40,
+         latitude=mindpoint[0],
+         longitude=mindpoint[1],
+         zoom=12,
+         pitch=50,
      ),
      layers=[
          pdk.Layer(
@@ -52,17 +77,17 @@ st.pydeck_chart(pdk.Deck(
             data=df,
             get_position='[lon, lat]',
             radius=20,
-            elevation_scale=20,
-            elevation_range=[9, 10],
-            pickable=False,
-            extruded=False,
+            elevation_scale=400,
+            elevation_range=[0, 1000],
+            pickable=True,
+            extruded=True,
          ),
          pdk.Layer(
              'ScatterplotLayer',
              data=df,
              get_position='[lon, lat]',
              get_color='[200, 30, 0, 160]',
-             get_radius=200,
+             get_radius=80,
          ),
      ],
  ))
