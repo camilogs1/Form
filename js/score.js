@@ -284,31 +284,31 @@ function score()
     {
         score += 4
     }
-    ifelse(document.getElementById("pre_7_b").checked)
+    if(document.getElementById("pre_7_b").checked)
     {
         score += 3
     }
-    ifelse(document.getElementById("pre_7_c").checked)
+    if(document.getElementById("pre_7_c").checked)
     {
         score += 3
     }
-    ifelse(document.getElementById("pre_7_d").checked)
+    if(document.getElementById("pre_7_d").checked)
     {   
         score += 4
     }
-    ifelse(document.getElementById("pre_7_e").checked)
+    if(document.getElementById("pre_7_e").checked)
     {
         score += 4
     }
-    ifelse(document.getElementById("pre_7_f").checked)
+    if(document.getElementById("pre_7_f").checked)
     {
         score += 3
     }
-    ifelse(document.getElementById("pre_7_g").checked)
+    if(document.getElementById("pre_7_g").checked)
     {
         score += 0
     }
-    ifelse(document.getElementById("pre_7_h").checked)
+    if(document.getElementById("pre_7_h").checked)
     {
         score += 0
     }

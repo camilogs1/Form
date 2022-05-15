@@ -319,7 +319,40 @@ function infopage1()
 				nomconstructora = document.getElementById("pre_1.13.2_t").value;
 				console.log(nomconstructora)
 			}
-			
+
+			var score1 = 0
+		//Pregunta 1.12
+		if(document.getElementById("pre_1.12_a").checked)
+		{
+			score1 += 4
+		}
+		if(document.getElementById("pre_1.12_b").checked)
+		{
+			score1 += 3
+		}
+		if(document.getElementById("pre_1.12_c").checked)
+		{
+			score1 += 3
+		}
+		if(document.getElementById("pre_1.12_d").checked)
+		{   
+			score1 += 2
+		}
+		if(document.getElementById("pre_1.12_e").checked)
+		{
+			score1 += 1
+		}
+
+		//Pregunta 1.13
+		if(document.getElementById("pre_1.13_si").checked)
+		{
+			score1 += 0
+		}
+		if(document.getElementById("pre_1.13_no").checked)
+		{
+			score1 += 3
+		}
+
 			
 			console.log(name1);
 			console.log(name2);
@@ -333,6 +366,7 @@ function infopage1()
 			console.log(depar);
 			console.log(muni);
 			console.log(barrio);
+			console.log(score1);
 
 			fetch("https://sheet.best/api/sheets/5006e172-632b-4954-b337-04ab21fd7946", {
 				method: "POST",
@@ -360,6 +394,7 @@ function infopage1()
 					AConstruccion: construccion,
 					Constructora: constructora,
 					NConstructora: nomconstructora,
+					Puntaje: score1,
 					},
 				]),
 				})
@@ -725,6 +760,291 @@ function nextpage2()
 					console.log(elemento)
 				}
 
+				var score2 = 0
+
+				    //Pregunta 3.1
+					if(document.getElementById("pre_3.1_a").checked)
+					{
+						score2 += 2
+					}
+					if(document.getElementById("pre_3.1_b").checked)
+					{
+						score2 += 1
+					}
+					
+					//Pregunta 3.2
+					if(document.getElementById("pre_3.2_a").checked)
+					{
+						score2 += 2
+					}
+					if(document.getElementById("pre_3.2_b").checked)
+					{
+						score2 += 1
+					}
+					if(document.getElementById("pre_3.2_c").checked)
+					{
+						score2 += 2
+					}
+
+					//Pregunta 4.1
+					if(document.getElementById("pre_4.1_a").checked)
+					{
+						score2 += 0
+					}
+					if(document.getElementById("pre_4.1_b").checked)
+					{
+						score2 += 1
+					}
+					if(document.getElementById("pre_4.1_c").checked)
+					{
+						score2 += 2
+					}
+					if(document.getElementById("pre_4.1_d").checked)
+					{   
+						score2 += 2
+					}
+					if(document.getElementById("pre_4.1_e").checked)
+					{
+						score2 += 3
+					}
+					if(document.getElementById("pre_4.1_f").checked)
+					{
+						score2 += 3
+					}
+					if(document.getElementById("pre_4.1_g").checked)
+					{
+						score2 += 2
+					}
+					if(document.getElementById("pre_4.1_h").checked)
+					{
+						score2 += 4
+					}
+					if(document.getElementById("pre_4.1_i").checked)
+					{
+						score2 += 2
+					}
+					if(document.getElementById("pre_4.1_j").checked)
+					{
+						score2 += 0
+					}
+
+					//Pregunta 4.2.1
+					if(document.getElementById("pre_4.2.1_a").checked)
+					{
+						score2 += 0
+					}
+					if(document.getElementById("pre_4.2.1_b").checked)
+					{
+						score2 += 0
+					}
+					if(document.getElementById("pre_4.2.1_c").checked)
+					{
+						score2 += 0
+					}
+					if(document.getElementById("pre_4.2.1_d").checked)
+					{   
+						score2 += 0
+					}
+					if(document.getElementById("pre_4.2.1_e").checked)
+					{
+						score2 += 0
+					}
+					if(document.getElementById("pre_4.2.1_f").checked)
+					{
+						score2 += 0
+					}
+					if(document.getElementById("pre_4.2.1_g").checked)
+					{
+						score2 += 0
+					}
+					if(document.getElementById("pre_4.2.1_h").checked)
+					{
+						score2 += 0
+					}
+					if(document.getElementById("pre_4.2.1_i").checked)
+					{
+						score2 += 0
+					}
+					if(document.getElementById("pre_4.2.1_j").checked)
+					{
+						score2 += 0
+					}
+
+					//Pregunta 4.3
+					if(document.getElementById("pre_4.3_a").checked)
+					{
+						score2 += 0
+					}
+					if(document.getElementById("pre_4.3_b").checked)
+					{
+						score2 += 1
+					}
+					if(document.getElementById("pre_4.3_c").checked)
+					{
+						score2 += 2
+					}
+					if(document.getElementById("pre_4.3_d").checked)
+					{   
+						score2 += 2
+					}
+					if(document.getElementById("pre_4.3_e").checked)
+					{
+						score2 += 3
+					}
+					if(document.getElementById("pre_4.3_f").checked)
+					{
+						score2 += 3
+					}
+					if(document.getElementById("pre_4.3_g").checked)
+					{
+						score2 += 2
+					}
+					if(document.getElementById("pre_4.3_h").checked)
+					{
+						score2 += 4
+					}
+					if(document.getElementById("pre_4.3_i").checked)
+					{
+						score2 += 2
+					}
+					if(document.getElementById("pre_4.3_j").checked)
+					{
+						score2 += 0
+					}
+					
+					//Pregunta 5.1
+					if(document.getElementById("pre_5.1_1").checked)
+					{
+						score2 += 1
+					}
+					if(document.getElementById("pre_5.1_2").checked)
+					{
+						score2 += 1
+					}
+					if(document.getElementById("pre_5.1_3").checked)
+					{
+						score2 += 1
+					}
+					if(document.getElementById("pre_5.1_4").checked)
+					{   
+						score2 += 2
+					}
+					if(document.getElementById("pre_5.1_5").checked)
+					{
+						score2 += 2
+					}
+					if(document.getElementById("pre_5.1_6").checked)
+					{
+						score2 += 2
+					}
+					if(document.getElementById("pre_5.1_7").checked)
+					{
+						score2 += 3
+					}
+
+					//Pregunta 5.2
+					if(document.getElementById("pre_5.2_1").checked)
+					{
+						score2 += 1
+					}
+					if(document.getElementById("pre_5.2_2").checked)
+					{
+						score2 += 1
+					}
+					if(document.getElementById("pre_5.2_3").checked)
+					{
+						score2 += 1
+					}
+					if(document.getElementById("pre_5.2_4").checked)
+					{   
+						score2 += 2
+					}
+					if(document.getElementById("pre_5.2_5").checked)
+					{
+						score2 += 2
+					}
+					if(document.getElementById("pre_5.2_6").checked)
+					{
+						score2 += 2
+					}
+					if(document.getElementById("pre_5.2_7").checked)
+					{
+						score2 += 3
+					}
+
+					//Pregunta 5.3
+					if(document.getElementById("pre_5.3_a").checked)
+					{
+						score2 += 0
+					}
+					if(document.getElementById("pre_5.3_b").checked)
+					{
+						score2 += 1
+					}
+					if(document.getElementById("pre_5.3_c").checked)
+					{
+						score2 += 2
+					}
+					if(document.getElementById("pre_5.3_d").checked)
+					{   
+						score2 += 3
+					}
+					if(document.getElementById("pre_5.3_e").checked)
+					{
+						score2 += 3
+					}
+					if(document.getElementById("pre_5.3_f").checked)
+					{
+						score2 += 4
+					}
+
+					//Pregunta 6.1
+					if(document.getElementById("pre_6_si").checked)
+					{
+						score2 += 3
+					}
+					if(document.getElementById("pre_6_no").checked)
+					{
+						score2 += 0
+					}
+
+					//Pregunta 7.1
+					if(document.getElementById("pre_7_a").checked)
+					{
+						score2 += 4
+					}
+					if(document.getElementById("pre_7_b").checked)
+					{
+						score2 += 3
+					}
+					if(document.getElementById("pre_7_c").checked)
+					{
+						score2 += 3
+					}
+					if(document.getElementById("pre_7_d").checked)
+					{   
+						score2 += 4
+					}
+					if(document.getElementById("pre_7_e").checked)
+					{
+						score2 += 4
+					}
+					if(document.getElementById("pre_7_f").checked)
+					{
+						score2 += 3
+					}
+					if(document.getElementById("pre_7_g").checked)
+					{
+						score2 += 0
+					}
+					if(document.getElementById("pre_7_h").checked)
+					{
+						score2 += 0
+					}
+
+					console.log(score2);
+
+
 			fetch("https://sheet.best/api/sheets/949986b8-42e3-4d19-bf2e-ea10415c858c", {
 			method: "POST",
 			mode: "cors",
@@ -744,6 +1064,7 @@ function nextpage2()
 				Sotanos: sotanos,
 				ComparteMuro: muro,
 				EquiposGrandes: elemento,
+				Puntaje: score2,
 				},
 			]),
 			}) 
@@ -754,7 +1075,7 @@ function nextpage2()
 	{
 		setTimeout(function(){
 			location.href = "page4.html"
-		}, 1000);
+		}, 1000*5);
 	}
 
 	function infopage3()
@@ -1070,6 +1391,311 @@ function nextpage2()
 			console.log(grieta)
 		}
 
+		var score = 0
+
+		//Pregunta 8
+		if(document.getElementById("pre_8_a").checked)
+		{
+			score += 1
+		}
+		if(document.getElementById("pre_8_b").checked)
+		{
+			score += 2
+		}
+		if(document.getElementById("pre_8_c").checked)
+		{
+			score += 3
+		}
+		if(document.getElementById("pre_8_d").checked)
+		{   
+			score += 3
+		}
+	
+		//Pregunta 9.1
+		if(document.getElementById("pre_9_a").checked)
+		{
+			score += 2
+		}
+		if(document.getElementById("pre_9_b").checked)
+		{
+			score += 1
+		}
+		if(document.getElementById("pre_9_c").checked)
+		{
+			score += 2
+		}
+		if(document.getElementById("pre_9_d").checked)
+		{   
+			score += 1
+		}
+		if(document.getElementById("pre_9_e").checked)
+		{
+			score += 2
+		}
+		if(document.getElementById("pre_9_f").checked)
+		{
+			score += 3
+		}
+		if(document.getElementById("pre_9_g").checked)
+		{
+			score += 3
+		}
+		if(document.getElementById("pre_9_h").checked)
+		{
+			score += 3
+		}
+		if(document.getElementById("pre_9_i").checked)
+		{
+			score += 0
+		}
+	
+		//Pregunta 9.2.1  --->  Si sale
+		Vatiable1 = document.getElementById("pre_9.2.1_a")
+		Vatiable2 = document.getElementById("pre_9.2.1_b")
+		Vatiable3 = document.getElementById("pre_9.2.1_c")
+		if (typeof Vatiable1 === 'undefined')
+		{
+			score += 0
+		}
+		else
+		{
+			if(Vatiable1.checked)
+			{
+				score += 1
+			}
+		}
+	
+		if (typeof Vatiable2 === 'undefined')
+		{
+			score += 0
+		}
+		else
+		{
+			if(Vatiable2.checked)
+			{
+				score += 1
+			}
+		}
+	
+		if (typeof Vatiable3 === 'undefined')
+		{
+			score += 0
+		}
+		else
+		{
+			if(Vatiable3.checked)
+			{
+				score += 1
+			}
+		}
+	
+		//Pregunta 9.2.2  --->  Si sale
+		Vatiable4 = document.getElementById("pre_9.2.2_a")
+		Vatiable5 = document.getElementById("pre_9.2.2_b")
+		Vatiable6 = document.getElementById("pre_9.2.2_c")
+		Vatiable7 = document.getElementById("pre_9.2.2_d")
+		if (typeof Vatiable4 === 'undefined')
+		{
+			score += 0
+		}
+		else
+		{
+			if(Vatiable4.checked)
+			{
+				score += 1
+			}
+		}
+	
+		if (typeof Vatiable5 === 'undefined')
+		{
+			score += 0
+		}
+		else
+		{
+			if(Vatiable5.checked)
+			{
+				score += 1
+			}
+		}
+	
+		if (typeof Vatiable6 === 'undefined')
+		{
+			score += 0
+		}
+		else
+		{
+			if(Vatiable6.checked)
+			{
+				score += 1
+			}
+		}
+	
+		if (typeof Vatiable7 === 'undefined')
+		{
+			score += 0
+		}
+		else
+		{
+			if(Vatiable7.checked)
+			{
+				score += 2
+			}
+		}
+	
+		//Pregunta 9.2.3  --->  Si sale
+		Vatiable8 = document.getElementById("pre_9.2.3_a")
+		Vatiable9 = document.getElementById("pre_9.2.3_b")
+		Vatiable10 = document.getElementById("pre_9.2.3_c")
+		Vatiable11 = document.getElementById("pre_9.2.3_d")
+		Vatiable12 = document.getElementById("pre_9.2.3_e")
+		Vatiable13 = document.getElementById("pre_9.2.3_f")
+	
+		if (typeof Vatiable8 === 'undefined')
+		{
+			score += 0
+		}
+		else
+		{
+			if(Vatiable8.checked)
+			{
+				score += 2
+			}
+		}
+	
+		if (typeof Vatiable9 === 'undefined')
+		{
+			score += 0
+		}
+		else
+		{
+			if(Vatiable9.checked)
+			{
+				score += 2
+			}
+		}
+	
+		if (typeof Vatiable10 === 'undefined')
+		{
+			score += 0
+		}
+		else
+		{
+			if(Vatiable10.checked)
+			{
+				score += 2
+			}
+		}
+	
+		if (typeof Vatiable11 === 'undefined')
+		{
+			score += 0
+		}
+		else
+		{
+			if(Vatiable11.checked)
+			{
+				score += 3
+			}
+		}
+	
+		if (typeof Vatiable12 === 'undefined')
+		{
+			score += 0
+		}
+		else
+		{
+			if(Vatiable12.checked)
+			{
+				score += 1
+			}
+		}
+	
+		if (typeof Vatiable13 === 'undefined')
+		{
+			score += 0
+		}
+		else
+		{
+			if(Vatiable13.checked)
+			{
+				score += 0
+			}
+		}
+	
+		//Pregunta 10.1
+		if(document.getElementById("pre_10_a").checked)
+		{
+			score += 1
+		}
+		if(document.getElementById("pre_10_b").checked)
+		{
+			score += 1
+		}
+		if(document.getElementById("pre_10_c").checked)
+		{
+			score += 2
+		}
+		if(document.getElementById("pre_10_d").checked)
+		{
+			score += 1
+		}
+	
+		//Pregunta 11
+		if(document.getElementById("pre_11_a").checked)
+		{
+			score += 1
+		}
+		if(document.getElementById("pre_11_b").checked)
+		{
+			score += 1
+		}
+		if(document.getElementById("pre_11_c").checked)
+		{
+			score += 3
+		}
+		if(document.getElementById("pre_11_d").checked)
+		{
+			score += 1
+		}
+		if(document.getElementById("pre_11_e").checked)
+		{
+			score += 2
+		}
+		if(document.getElementById("pre_11_f").checked)
+		{
+			score += 3
+		}
+		if(document.getElementById("pre_11_g").checked)
+		{
+			score += 1
+		}
+		if(document.getElementById("pre_11_h").checked)
+		{
+			score += 3
+		}
+	
+		//Pregunta 12.1
+		if(document.getElementById("pre_12.1_si").checked)
+		{
+			score += 4
+		}
+		if(document.getElementById("pre_12.1_no").checked)
+		{
+			score += 0
+		}
+	
+		//Pregunta 12.2
+		if(document.getElementById("pre_12.2_si").checked)
+		{
+			score += 3
+		}
+		if(document.getElementById("pre_12.2_no").checked)
+		{
+			score += 0
+		}
+	
+		console.log(score)
+
 
 		fetch("https://sheet.best/api/sheets/328d17e6-3170-4f78-af6a-6a40370a88e0", {
 			method: "POST",
@@ -1088,6 +1714,7 @@ function nextpage2()
 					TipoMamposteria: tipomampo,
 					TipoConcretoR: tipoconcreto,
 					TipoPrefabricado: tipoprefabricado,
+					Puntaje: score,
 				},
 			]),
 			})
@@ -1098,5 +1725,5 @@ function nextpage2()
 	{
 		setTimeout(function(){
 			location.href = "index.html"
-		}, 1000);
+		}, 1000*5);
 	}
