@@ -385,7 +385,7 @@ function infopage1()
 					Cedula: cedu,
 					Direccion: dire,
 					lon: longitud,
-					lan: latitud, 
+					lat: latitud, 
 					NombreU: nomu,
 					Departamento: depar,
 					Municipio: muni,
