@@ -1,3 +1,4 @@
+from multiprocessing.sharedctypes import Value
 from operator import ne
 from os import sep
 import streamlit as st
@@ -21,30 +22,12 @@ dataset["Escala"] = np.where(dataset["Porcentaje"] <= 30, 'Baja',
          (np.where((dataset["Porcentaje"]>=31) & (dataset["Porcentaje"]<=60), 'Media',
          (np.where((dataset["Porcentaje"] >= 61) & (dataset["Porcentaje"]<=80), 'Alta', 'Extrema')))))
 
-# def highlight(s):
-#     if s.escala == "Media":
-#         return ['background-color: yellow']*7
-#     else:
-#         return ['background-color: white']*7
-
-# dataset.style.apply(highlight, axis=1)        
-
-
-def highlight_max(s):
-    '''
-    highlight the maximum in a Series yellow.
-    '''
-    is_max = s == "Media"
-    return ['background-color: yellow' if v else '' for v in is_max]
-
-
 
 st.title('HouseSafe')
 
-dataset["Escala"].to_frame().style.applymap(highlight_max)
-
 st.metric(label="Número de encuestas", value=dataset.shape[0])
-st.dataframe(dataset["Escala"].to_frame().style.highlight_max(axis=0))
+
+st.dataframe(dataset)
 
 cantidad = dataset[["AreaV","Cedula"]]
 cantidad2 = cantidad.groupby(["AreaV"]).count()
@@ -66,7 +49,6 @@ mean_df = cantidad4['Cantidad'].mean()
 cantidad3 = dataset[["Municipio","Cedula"]]
 cantidad4 = cantidad3.groupby(["Municipio"]).count()
 cantidad4.Cedula.astype(float)
-st.write("Cantidad")
 cantidad4.columns = ['Cantidad']
 
 st.header('Municipios')
